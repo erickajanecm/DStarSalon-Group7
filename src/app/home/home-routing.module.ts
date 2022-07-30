@@ -9,7 +9,7 @@ const routes: Routes = [
     component: HomePage,
     children:[
       {
-        path:'homepage',
+        path:'userhomepage',
         children:[
           {
             path:'',
@@ -18,7 +18,7 @@ const routes: Routes = [
         ]
       },
       {
-        path:'profile',
+        path:'userprofile',
         children:[
           {
             path:'',
@@ -27,17 +27,17 @@ const routes: Routes = [
         ]
       },
       {
-        path:'appointments',
+        path:'userappointment',
         children:[
           {
             path:'',
-            loadChildren: () => import('../user/userappoint/userappoint.module').then( m => m.UserappointPageModule)
+            loadChildren: () => import('../user/userappointment/userappointment.module').then( m => m.UserappointmentPageModule)
           }
         ]
       },
       {
         path:'',
-        redirectTo:'homepage',
+        redirectTo:'userhomepage',
         pathMatch: 'full'
       }
     ]

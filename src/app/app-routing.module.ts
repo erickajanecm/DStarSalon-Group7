@@ -32,13 +32,21 @@ const routes: Routes = [
     loadChildren: () => import('./user/userprofile/userprofile.module').then( m => m.UserprofilePageModule)
   },
   {
-    path: 'userappoint',
-    loadChildren: () => import('./user/userappoint/userappoint.module').then( m => m.UserappointPageModule)
-  },
-  {
     path: 'make-appointment',
     loadChildren: () => import('./user/make-appointment/make-appointment.module').then( m => m.MakeAppointmentPageModule)
   },
+  {
+    path: 'edit-appointment',
+    loadChildren: () => import('./user/edit-appointment/edit-appointment.module').then( m => m.EditAppointmentPageModule)
+  },
+  {
+    path: 'userappointment',
+    loadChildren: () => import('./user/userappointment/userappointment.module').then( m => m.UserappointmentPageModule),
+  },
+  {
+    path: 'userhomeappointment',
+    loadChildren: () => import('./user/userhomeappointment/userhomeappointment.module').then( m => m.UserhomeappointmentPageModule)
+  }
 ];
 
 @NgModule({
