@@ -1,0 +1,35 @@
+.container {
+    img {
+        height: 100px;
+        margin-top: 40%; 
+    }
+}
+
+.text-stl{
+    padding-top: 40%;
+    padding-left: 12%;
+    text-align: left;
+    font-size: 200%;
+    font-weight: 1000;
+    color: #F5C6AA;
+}
+
+.text-stl2{
+    text-align: left;
+    margin-top: 3%;
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-bottom: 10%;
+    font-size: 80%;
+    font-weight: normal;
+    color: #63666A;
+}
+
+.flex-center {
+    display: flex;
+    font-size: medium;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25%;
+    padding-right: 25%;;
+}
