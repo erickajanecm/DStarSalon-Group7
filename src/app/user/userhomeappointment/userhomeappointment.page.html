@@ -8,8 +8,8 @@
 <ion-content>
 
 <ion-content>
-  <ion-list class="ios list-ios hydrated">
-    <ion-item *ngFor="let booking of Bookings" class="user-list">
+  <ion-list>
+    <ion-item *ngFor="let booking of bookings" class="user-list">
       <ion-label>
         <h5>
           <ion-icon name="person"></ion-icon> {{booking.name}}
@@ -19,11 +19,11 @@
         </p>
       </ion-label>
       <div class="item-note" item-end>
-        <button ion-button clear [routerLink]="['/edit-appointment/', booking.$key]">
-          <ion-icon name="create" style="zoom:2.0"></ion-icon>
+        <button ion-button clear routerLink="'/edit-appointment/', bookings.$key">
+          <ion-icon name="create-outline" style="zoom:2.0"></ion-icon>
         </button>
-        <button ion-button clear (clck)="deleteBooking(booking.$key)">
-          <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+        <button ion-button clear (click)="deleteBooking(booking.$key)">
+          <ion-icon name="trash-outline" style="zoom:2.0"></ion-icon>
         </button>
       </div>
     </ion-item>

@@ -8,21 +8,12 @@ const routes: Routes = [
   component: UserappointmentPage,
   children:[
       {
-        path:'make-appointment',
-        children:[
-          {
-            path:'',
-            loadChildren: () => import('src/app/user/make-appointment/make-appointment.module').
-            then( m => m.MakeAppointmentPageModule)
-          }
-        ]
-      },
-      {
         path:'edit-appointment',
         children:[
           {
             path:'',
-            loadChildren: () => import('src/app/user/edit-appointment/edit-appointment.module').then( m => m.EditAppointmentPageModule)
+            loadChildren: () => import('src/app/user/edit-appointment/edit-appointment.module').
+            then( m => m.EditAppointmentPageModule)
           }
         ]
       },
@@ -33,6 +24,16 @@ const routes: Routes = [
             path:'',
             loadChildren: () => import('src/app/user/userhomeappointment/userhomeappointment.module').
             then( m => m.UserhomeappointmentPageModule)
+          }
+        ]
+      },
+      {
+        path:'make-appointment',
+        children:[
+          {
+            path:'',
+            loadChildren: () => import('src/app/user/make-appointment/make-appointment.module').
+            then( m => m.MakeAppointmentPageModule)
           }
         ]
       },

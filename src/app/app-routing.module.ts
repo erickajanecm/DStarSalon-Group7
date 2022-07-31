@@ -32,20 +32,12 @@ const routes: Routes = [
     loadChildren: () => import('./user/userprofile/userprofile.module').then( m => m.UserprofilePageModule)
   },
   {
-    path: 'make-appointment',
-    loadChildren: () => import('./user/make-appointment/make-appointment.module').then( m => m.MakeAppointmentPageModule)
-  },
-  {
-    path: 'edit-appointment',
-    loadChildren: () => import('./user/edit-appointment/edit-appointment.module').then( m => m.EditAppointmentPageModule)
-  },
-  {
     path: 'userappointment',
     loadChildren: () => import('./user/userappointment/userappointment.module').then( m => m.UserappointmentPageModule),
   },
   {
-    path: 'userhomeappointment',
-    loadChildren: () => import('./user/userhomeappointment/userhomeappointment.module').then( m => m.UserhomeappointmentPageModule)
+    path: 'edit-appt',
+    loadChildren: () => import('./user/edit-appt/edit-appt.module').then( m => m.EditApptPageModule)
   }
 ];
 

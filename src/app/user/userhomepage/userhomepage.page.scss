@@ -1,0 +1,33 @@
+.card-flex{
+    margin-top: 20%;
+    padding-right: 30%;
+}
+
+.cards-flex{
+    margin-top: 20%;
+    display: inline-block;
+    
+    .txt{
+        margin-left: 10%;
+        font-weight: bold;
+    }
+
+    .txt2{
+        font-size: larger;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+    ion-icon{
+        margin-left: 2px;
+    }
+}
+
+.text-stl2{
+    font-size: small;
+    font-weight: normal;
+    color: #000;
+}
+
+ion-col {
+    display: flex;
+  }

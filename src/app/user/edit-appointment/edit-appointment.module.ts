@@ -19,4 +19,3 @@ import { EditAppointmentPage } from './edit-appointment.page';
   declarations: [EditAppointmentPage]
 })
 export class EditAppointmentPageModule { }
-export class MakeAppointmentPageModule { }

@@ -18,6 +18,8 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -25,7 +27,16 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp({
+      apiKey: 'AIzaSyBkk6y1oeqWRBtJ8KJwH2rLhwNk3YwA-O4',
+      authDomain: 'dssfirebase-19a77.firebaseapp.com',
+      databaseURL: 'https://dssfirebase-19a77-default-rtdb.asia-southeast1.firebasedatabase.app',
+      projectId: 'dssfirebase-19a77',
+      storageBucket: 'dssfirebase-19a77.appspot.com',
+      messagingSenderId: '581502680187',
+      appId: '1:581502680187:web:3b48adbcb6ec6213d576de',
+      measurementId: 'G-NMSZL4XHY5'
+    }),
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
@@ -40,3 +51,4 @@ import { HttpClientModule } from '@angular/common/http';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+

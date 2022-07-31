@@ -33,7 +33,7 @@ export class EditAppointmentPage implements OnInit {
   updateForm() {
     this.aptService.updateBooking(this.id, this.updateBookingForm.value)
       .then(() => {
-        this.router.navigate(['/userappointment']);
+        this.router.navigate(['/home/userappointment/userhomeappointment']);
       })
       .catch(error => console.log(error));
   }
