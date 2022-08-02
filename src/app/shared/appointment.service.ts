@@ -5,6 +5,7 @@ import {
   AngularFireList,
   AngularFireObject,
 } from '@angular/fire/compat/database';
+import { BaseRouteReuseStrategy } from '@angular/router';
 @Injectable({
   providedIn: 'root',
 })
@@ -18,6 +19,10 @@ export class AppointmentService {
       name: apt.name,
       email: apt.email,
       mobile: apt.mobile,
+      date: apt.date,
+      time: apt.time,
+      serve: apt.serve,
+      beaut: apt.beaut
     });
   }
   // Get Single
@@ -36,6 +41,10 @@ export class AppointmentService {
       name: apt.name,
       email: apt.email,
       mobile: apt.mobile,
+      date: apt.date,
+      time: apt.time,
+      serve: apt.serve,
+      beaut: apt.beaut
     });
   }
   // Delete

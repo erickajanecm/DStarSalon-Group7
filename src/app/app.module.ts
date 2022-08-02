@@ -28,14 +28,14 @@ import { HttpClientModule } from '@angular/common/http';
     IonicModule.forRoot(),
     AppRoutingModule,
     AngularFireModule.initializeApp({
-      apiKey: 'AIzaSyBkk6y1oeqWRBtJ8KJwH2rLhwNk3YwA-O4',
-      authDomain: 'dssfirebase-19a77.firebaseapp.com',
-      databaseURL: 'https://dssfirebase-19a77-default-rtdb.asia-southeast1.firebasedatabase.app',
-      projectId: 'dssfirebase-19a77',
-      storageBucket: 'dssfirebase-19a77.appspot.com',
-      messagingSenderId: '581502680187',
-      appId: '1:581502680187:web:3b48adbcb6ec6213d576de',
-      measurementId: 'G-NMSZL4XHY5'
+      apiKey: 'AIzaSyC2Eb2kgqEf0GwKTASsbENnTYmXTWak8AI',
+      authDomain: 'dss-testing-c45a9.firebaseapp.com',
+      databaseURL: 'https://dss-testing-c45a9-default-rtdb.asia-southeast1.firebasedatabase.app',
+      projectId: 'dss-testing-c45a9',
+      storageBucket: 'dss-testing-c45a9.appspot.com',
+      messagingSenderId: '501024335443',
+      appId: '1:501024335443:web:d2fb75fc597787db2908a6',
+      measurementId: 'G-R55F7VJXP5'
     }),
     AngularFireAuthModule,
     AngularFirestoreModule,

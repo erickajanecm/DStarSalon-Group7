@@ -21,7 +21,11 @@ export class UserappointmentPage implements OnInit {
     this.bookingForm = this.fb.group({
       name: [''],
       email: [''],
-      mobile: ['']
+      mobile: [''],
+      date: [''],
+      time: [''],
+      serve: [''],
+      beaut: [''],
     });
   }
   formSubmit() {
@@ -36,13 +40,5 @@ export class UserappointmentPage implements OnInit {
       })
         .catch(error => console.log(error));
     }
-  }
-  async presentAlert() {
-    const alert = await this.alertController.create({
-      header: 'Confirm Booking?',
-      buttons: ['CONFIRM']
-    });
-
-    await alert.present();
   }
 }

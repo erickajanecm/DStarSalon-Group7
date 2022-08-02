@@ -1,5 +1,5 @@
 <ion-content>
-  <div class="text-padding"><ion-text color="medium"> Appointments </ion-text></div>
+  <div class="text-padding"><ion-text> Appointments </ion-text></div>
   
   <ion-card>
     <ion-item *ngFor="let booking of bookings" class="user-list">
@@ -12,10 +12,10 @@
         </p>
       </ion-label>
       <div item-end>
-        <button ion-button clear click="'/edit-appt/', bookings.$key">
+         <button ion-button clear [routerLink]="['/edit-appt/', booking.$key]">
           <ion-icon name="create-outline" style="zoom:2.0"></ion-icon>
         </button>
-        <button ion-button clear (click)="deleteBooking(bookings.$key)">
+        <button ion-button clear (click)="deleteBooking(booking.$key)">
           <ion-icon name="trash-outline" style="zoom:2.0"></ion-icon>
         </button>
       </div>

@@ -1,10 +1,23 @@
 <ion-content id="main">
+
+    <div class="txt2">
+        <br>
+        <ion-text>D STAR SALON APPOINTMENTS</ion-text>
+    </div>
+
+    <div class="ion-datetime">
+        <ion-datetime [value]="dateTime" displayFormat="MMM DD, YYYY HH:mm" ></ion-datetime>
+    </div>
+
+    <div class="txt">
+        <ion-text>Services Available</ion-text>
+    </div>
+   
     <div>
-        <ion-text class="txt">Services Offered</ion-text>
         <ion-grid>
             <ion-row>
                 <ion-col size="6">
-                    <ion-card full no-margin id="card-1">
+                    <ion-card full no-margin id="card">
                         <img id="img" src="/assets/iconpics/haircut.png">
                         <ion-card-content>
                         Hair Cut
@@ -15,7 +28,31 @@
                 </ion-col>
                     
                 <ion-col size="6">             
-                    <ion-card full no-margin id="card-2">
+                    <ion-card full no-margin id="card">
+                        <img  src="/assets/iconpics/foot.png">
+                        <ion-card-content>
+                        Foot Spa
+                        <br>
+                        <label id="price">Php 250.00</label>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="6">
+                    <ion-card full no-margin id="card">
+                        <img id="img" src="/assets/iconpics/haircut.png">
+                        <ion-card-content>
+                        Hair Cut
+                        <br>
+                        <label id="price">Php 80.00</label>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+                    
+                <ion-col size="6">             
+                    <ion-card full no-margin id="card">
                         <img  src="/assets/iconpics/foot.png">
                         <ion-card-content>
                         Foot Spa

@@ -10,9 +10,11 @@ import { AppointmentService } from 'src/app/shared/appointment.service';
 })
 export class UserhomepagePage implements OnInit {
   bookings = [];
+  dateTime;
   constructor(
-    private aptService: AppointmentService
-  ) { }
+    private aptService: AppointmentService,
+  ) {}
+
   ngOnInit() {
     this.fetchBookings();
     const bookingRes = this.aptService.getBookingList();
@@ -23,6 +25,10 @@ export class UserhomepagePage implements OnInit {
         a['$key'] = item.key;
         this.bookings.push(a as Appointment);
       });
+    });
+
+    setTimeout(() => {
+      this.dateTime = new Date().toISOString();
     });
   }
   fetchBookings() {

@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 
 import { Plugins } from '@capacitor/core';
 import { HttpClient } from '@angular/common/http';
-
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const { Storage } = Plugins;
 const TOKEN_KEY = 'my-token';

@@ -1,40 +1,20 @@
-.card-flex{
-    margin-top: 20%;
-    padding-right: 30%;
+.ion-datetime {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
 }
 
-.cards-flex{
-    margin-top: 20%;
-    display: inline-block;
-    
-    .txt{
-        margin-left: 10%;
-        font-weight: bold;
-    }
-
-    .txt2{
-        font-size: larger;
-        font-weight: bold;
-        margin-left: 5px;
-    }
-    ion-icon{
-        margin-left: 2px;
-    }
+.txt{
+    margin-top: 30px;
+    padding-left: 20px;
+    font-size: large;
+    font-weight: bold;
 }
 
-.text-stl2{
-    font-size: small;
-    font-weight: normal;
-    color: #000;
-}
-
-ion-col {
-    display: flex;
-  }
-
-  #size{
-    width: 450px;
-    height: 150px;
+.txt2{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
 }
 
 h2{
@@ -50,75 +30,20 @@ ion-card-content{
     font-size: 18px;
 }
 
-#card-1{
+#card{
+    color: #F5C6AA;
     width:150px;
     height: auto;
 }
 
-#card-1 img{
+img{
+    margin-top: 5px;
+    padding-left: 20px;
+    align-items: center;
     text-align: center;
 }
 
-#card-2{
-    width:150px;
-    height: auto;
-}
-
-#card-2 img{
-    height:131px;
-    width: 200px;
-}
-
-#card-3{
-    width:150px;
-    height: auto;
-}
-
-#card-3 img{
-    height:110px;
-    width: 200px;
-}
-
-#card-4{
-    width:150px;
-    height: auto;
-}
-
-#card-4 img{
-    height:100px;
-    width: 200px;
-}
-
-#card-5{
-    width:150px;
-    height: auto;
-}
-
-#card-5 img{
-    height:108px;
-    width: 200px;
-}
-
-#card-6{
-    width:150px;
-    height: auto;
-}
-
-#card-6 img{
-    height:110px;
-    width: 200px;
-}
-
-#card-7{
-    width:150px;
-    height: auto;
-}
-
-#card-7 img{
-    height:98px;
-    width: 200px;
-}
-
 #price{
-    color: #7EDB7C;
+    font-size: small;
+    color: #000;
 }
