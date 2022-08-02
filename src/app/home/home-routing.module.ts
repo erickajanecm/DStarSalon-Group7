@@ -18,6 +18,15 @@ const routes: Routes = [
         ]
       },
       {
+        path:'schedules',
+        children:[
+          {
+            path:'',
+            loadChildren: () => import('../user/schedules/schedules.module').then( m => m.SchedulesPageModule)
+          }
+        ]
+      },
+      {
         path:'userprofile',
         children:[
           {

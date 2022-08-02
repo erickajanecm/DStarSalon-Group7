@@ -1,29 +1,29 @@
 <ion-content id="main">
-    <div class="card-flex text-stl2">
-        <ion-card color="medium">
-            <ion-card-content>
-                <ion-icon name="add-circle-outline" style="zoom:3.0"></ion-icon>
-                <ion-button fill="clear" routerLink="/make-appointment" color='dark'>Appointment</ion-button>
-            </ion-card-content>
-        </ion-card>
-    </div>
-
-    <div class="cards-flex">
+    <div>
         <ion-text class="txt">Services Offered</ion-text>
         <ion-grid>
             <ion-row>
-              <ion-col size-md="20">
-                <ion-card color="light">
-                    <ion-icon name="cut-sharp" style="zoom:3.0"></ion-icon><br>
-                    <ion-text class="txt2">Haircut 80.00</ion-text>
-                </ion-card>
-              </ion-col>
-              <ion-col size-md="20">
-                <ion-card color="light">
-                    <ion-icon name="cut-sharp" style="zoom:3.0"></ion-icon><br>
-                    <ion-text class="txt2">Haircut 80.00</ion-text>
-                </ion-card>
-              </ion-col>
+                <ion-col size="6">
+                    <ion-card full no-margin id="card-1">
+                        <img id="img" src="/assets/iconpics/haircut.png">
+                        <ion-card-content>
+                        Hair Cut
+                        <br>
+                        <label id="price">Php 80.00</label>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+                    
+                <ion-col size="6">             
+                    <ion-card full no-margin id="card-2">
+                        <img  src="/assets/iconpics/foot.png">
+                        <ion-card-content>
+                        Foot Spa
+                        <br>
+                        <label id="price">Php 250.00</label>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
             </ion-row>
         </ion-grid>
     </div>

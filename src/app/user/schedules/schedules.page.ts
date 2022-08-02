@@ -4,11 +4,11 @@ import { Appointment } from 'src/app/shared/Appointment';
 import { AppointmentService } from 'src/app/shared/appointment.service';
 
 @Component({
-  selector: 'app-userhomeappointment',
-  templateUrl: 'userhomeappointment.page.html',
-  styleUrls: ['userhomeappointment.page.scss'],
+  selector: 'app-schedules',
+  templateUrl: 'schedules.page.html',
+  styleUrls: ['schedules.page.scss'],
 })
-export class UserhomeappointmentPage implements OnInit {
+export class SchedulesPage implements OnInit {
   bookings = [];
   constructor(
     private aptService: AppointmentService

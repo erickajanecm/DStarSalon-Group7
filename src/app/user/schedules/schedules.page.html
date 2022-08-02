@@ -1,14 +1,7 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      D Star Salon Appointments
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 <ion-content>
-
-<ion-content>
-  <ion-list>
+  <div class="text-padding"><ion-text color="medium"> Appointments </ion-text></div>
+  
+  <ion-card>
     <ion-item *ngFor="let booking of bookings" class="user-list">
       <ion-label>
         <h5>
@@ -18,17 +11,14 @@
           <ion-icon name="call"></ion-icon> {{booking.mobile}}
         </p>
       </ion-label>
-      <div class="item-note" item-end>
-        <button ion-button clear routerLink="'/edit-appointment/', bookings.$key">
+      <div item-end>
+        <button ion-button clear click="'/edit-appt/', bookings.$key">
           <ion-icon name="create-outline" style="zoom:2.0"></ion-icon>
         </button>
-        <button ion-button clear (click)="deleteBooking(booking.$key)">
+        <button ion-button clear (click)="deleteBooking(bookings.$key)">
           <ion-icon name="trash-outline" style="zoom:2.0"></ion-icon>
         </button>
       </div>
     </ion-item>
-  </ion-list>
+  </ion-card>
 </ion-content>
-
-
-

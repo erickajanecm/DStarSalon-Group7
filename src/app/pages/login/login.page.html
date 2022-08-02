@@ -10,7 +10,7 @@
       <ion-card>
         <ion-card-content>
           <ion-item>
-            <ion-label position="floating">Username / Email</ion-label>
+            <ion-label position="floating">Email</ion-label>
             <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
           </ion-item>
 
@@ -35,14 +35,6 @@
         <span *ngIf="password.errors?.required">Password is required</span>
         <span *ngIf="password.errors?.minlength">Password needs to be 6 characters</span>
       </div>
-    </div>
-
-    <div class="ion-text-center text-stl2">
-      <ion-text>Don't have an account yet?</ion-text>
-    </div>
-
-    <div class="ion-text-center text-stl">
-      <ion-text [routerLink]="['/signup']">Sign Up</ion-text>
     </div>
   </form>
 </ion-content>

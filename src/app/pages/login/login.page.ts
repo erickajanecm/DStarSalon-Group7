@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/member-ordering */
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthenticationService } from '../../services/authentication.service';
@@ -22,8 +23,8 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
     this.credentials = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]],
+      email: ['admin@admin.com', [Validators.required, Validators.email]],
+      password: ['admin', [Validators.required, Validators.minLength(6)]],
     });
   }
 
@@ -48,12 +49,10 @@ export class LoginPage implements OnInit {
     );
   }
 
-  // eslint-disable-next-line @typescript-eslint/member-ordering
   get email() {
     return this.credentials.get('email');
   }
 
-  // eslint-disable-next-line @typescript-eslint/member-ordering
   get password() {
     return this.credentials.get('password');
   }

@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'intro',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -18,10 +18,6 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
-  },
-  {
-    path: 'signup',
-    loadChildren: () => import('./pages/signup/signup.module').then( m => m.SignupPageModule)
   },
   {
     path: 'userhomepage',
@@ -38,6 +34,10 @@ const routes: Routes = [
   {
     path: 'edit-appt',
     loadChildren: () => import('./user/edit-appt/edit-appt.module').then( m => m.EditApptPageModule)
+  },
+  {
+    path: 'schedules',
+    loadChildren: () => import('./user/schedules/schedules.module').then( m => m.SchedulesPageModule)
   }
 ];
 
