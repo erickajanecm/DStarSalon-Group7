@@ -18,15 +18,6 @@ const routes: Routes = [
         ]
       },
       {
-        path:'schedules',
-        children:[
-          {
-            path:'',
-            loadChildren: () => import('../user/schedules/schedules.module').then( m => m.SchedulesPageModule)
-          }
-        ]
-      },
-      {
         path:'userprofile',
         children:[
           {
@@ -41,6 +32,15 @@ const routes: Routes = [
           {
             path:'',
             loadChildren: () => import('../user/userappointment/userappointment.module').then( m => m.UserappointmentPageModule)
+          }
+        ]
+      },
+      {
+        path:'schedules',
+        children:[
+          {
+            path:'',
+            loadChildren: () => import('../user/schedules/schedules.module').then( m => m.SchedulesPageModule)
           }
         ]
       },

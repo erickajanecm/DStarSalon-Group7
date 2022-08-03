@@ -1,0 +1,81 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Services</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+  <div>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="6">
+                <ion-card full no-margin id="card">
+                    <img id="img" src="/assets/iconpics/haircut.png">
+                    <ion-card-content>
+                    Hair Cut
+                    <br>
+                    <label id="price">Php 80.00</label>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+                
+            <ion-col size="6">             
+                <ion-card full no-margin id="card">
+                    <img  src="/assets/iconpics/gelpolish.png">
+                    <ion-card-content>
+                    Gel Polish
+                    <br>
+                    <label id="price">Php 550.00</label>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="6">
+                <ion-card full no-margin id="card">
+                    <img id="img" src="/assets/iconpics/footspa.png">
+                    <ion-card-content>
+                    Foot Spa
+                    <br>
+                    <label id="price">Php 250.00</label>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+                
+            <ion-col size="6">             
+                <ion-card full no-margin id="card">
+                    <img  src="/assets/iconpics/nail.png">
+                    <ion-card-content>
+                    Manicure
+                    <br>
+                    <label id="price">Php 50.00</label>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="6">
+                <ion-card full no-margin id="card">
+                    <img id="img" src="/assets/iconpics/foot.png">
+                    <ion-card-content>
+                    Pedicure
+                    <br>
+                    <label id="price">Php 100.00</label>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</div>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button><ion-icon name="add" ></ion-icon></ion-fab-button>
+</ion-fab>
+
+</ion-content>

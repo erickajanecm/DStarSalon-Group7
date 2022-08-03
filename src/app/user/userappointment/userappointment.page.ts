@@ -11,34 +11,9 @@ import { AlertController } from '@ionic/angular';
 })
 export class UserappointmentPage implements OnInit {
   bookingForm: FormGroup;
-  constructor(
-    private aptService: AppointmentService,
-    private router: Router,
-    public fb: FormBuilder,
-    private alertController: AlertController
-  ) { }
+  constructor() { }
   ngOnInit() {
-    this.bookingForm = this.fb.group({
-      name: [''],
-      email: [''],
-      mobile: [''],
-      date: [''],
-      time: [''],
-      serve: [''],
-      beaut: [''],
-    });
-  }
-  formSubmit() {
-    if (!this.bookingForm.valid) {
-      return false;
-
-    } else {
-      this.aptService.createBooking(this.bookingForm.value).then(res => {
-        console.log(res);
-        this.bookingForm.reset();
-        this.router.navigate(['/home/userappointment']);
-      })
-        .catch(error => console.log(error));
-    }
   }
 }
+
+

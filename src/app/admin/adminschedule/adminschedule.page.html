@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Appointments</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>  
+  <ion-card>
+    <ion-item *ngFor="let booking of bookings" class="user-list">
+      <ion-label>
+        <h3>
+          <ion-icon name="person"></ion-icon> {{booking.name}}
+        </h3>
+        <p>
+          <ion-icon name="calendar-sharp"></ion-icon> {{booking.date}}  {{booking.time}}
+        </p>
+        <p>
+          <ion-icon name="call"></ion-icon> {{booking.mobile}}
+        </p>
+        <p>
+          <ion-text>Beaut: </ion-text> {{booking.beaut}}
+        </p>
+      </ion-label>
+      <div item-end>
+         <button ion-button clear [routerLink]="['/edit-appt/', booking.$key]">
+          <ion-icon name="create-outline" style="zoom:2.0"></ion-icon>
+        </button>
+        <button ion-button clear (click)="deleteBooking(booking.$key)">
+          <ion-icon name="trash-outline" style="zoom:2.0"></ion-icon>
+        </button>
+      </div>
+    </ion-item>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/adminappoint"><ion-icon name="add" ></ion-icon></ion-fab-button>
+  </ion-fab>
+    
+</ion-content>

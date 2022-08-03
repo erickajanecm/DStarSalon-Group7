@@ -1,0 +1,35 @@
+.errors {
+    font-size: small;
+    color: #fff;
+    background: var(--ion-color-danger);
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.container {
+    img {
+        height: 80px;
+        margin-top: 30%; 
+    }
+}
+
+.card-flex{
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.text-stl{
+    font-size: small;
+    font-weight: bold;
+    color: #F5C6AA;
+}
+
+.text-stl2{
+    font-size: small;
+    font-weight: normal;
+    color: #000;
+}

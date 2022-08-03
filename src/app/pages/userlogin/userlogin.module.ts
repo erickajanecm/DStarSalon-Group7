@@ -4,18 +4,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { EditApptPageRoutingModule } from './edit-appt-routing.module';
+import { UserloginPageRoutingModule } from './userlogin-routing.module';
 
-import { EditApptPage } from './edit-appt.page';
+import { UserloginPage } from './userlogin.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    EditApptPageRoutingModule,
-    ReactiveFormsModule,
+    UserloginPageRoutingModule,
+    ReactiveFormsModule
   ],
-  declarations: [EditApptPage]
+  declarations: [UserloginPage]
 })
-export class EditApptPageModule {}
+export class UserloginPageModule {}

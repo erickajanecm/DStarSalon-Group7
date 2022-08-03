@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'intro',
     pathMatch: 'full'
   },
   {
@@ -32,12 +32,36 @@ const routes: Routes = [
     loadChildren: () => import('./user/userappointment/userappointment.module').then( m => m.UserappointmentPageModule),
   },
   {
-    path: 'edit-appt',
-    loadChildren: () => import('./user/edit-appt/edit-appt.module').then( m => m.EditApptPageModule)
+    path: 'userlogin',
+    loadChildren: () => import('./pages/userlogin/userlogin.module').then( m => m.UserloginPageModule)
   },
   {
-    path: 'schedules',
-    loadChildren: () => import('./user/schedules/schedules.module').then( m => m.SchedulesPageModule)
+    path: 'adminhome',
+    loadChildren: () => import('./admin/adminhome/adminhome.module').then( m => m.AdminhomePageModule)
+  },
+  {
+    path: 'adminhomepage',
+    loadChildren: () => import('./admin/adminhomepage/adminhomepage.module').then( m => m.AdminhomepagePageModule)
+  },
+  {
+    path: 'adminschedule',
+    loadChildren: () => import('./admin/adminschedule/adminschedule.module').then( m => m.AdminschedulePageModule)
+  },
+  {
+    path: 'adminappoint',
+    loadChildren: () => import('./admin/adminappoint/adminappoint.module').then( m => m.AdminappointPageModule)
+  },
+  {
+    path: 'adminservices',
+    loadChildren: () => import('./admin/adminservices/adminservices.module').then( m => m.AdminservicesPageModule)
+  },
+  {
+    path: 'adminsettings',
+    loadChildren: () => import('./admin/adminsettings/adminsettings.module').then( m => m.AdminsettingsPageModule)
+  },
+  {
+    path: 'usersignup',
+    loadChildren: () => import('./pages/usersignup/usersignup.module').then( m => m.UsersignupPageModule)
   }
 ];
 

@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start" [text]="Back" [icon]="back"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-title>Create Appointment</ion-title>
+  <ion-card>
+    <ion-list lines="full">
+      <form [formGroup]="bookingForm" (ngSubmit)="formSubmit()" >
+
+        <ion-item>
+          <ion-label position="stacked">Name</ion-label>
+          <ion-input formControlName="name" placeholder="First Name     Last Name" type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Address</ion-label>
+          <ion-input formControlName="email" placeholder="Barangay    City    Province" type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Contact Number</ion-label>
+          <ion-input formControlName="mobile" placeholder="09XX XXX XXX" type="text" required></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="stacked">Enter Date</ion-label>
+          <ion-input formControlName="date" required placeholder="Month Day, Year"></ion-input>
+        </ion-item>     
+
+        <ion-item>
+        <ion-label position="stacked">Enter Time</ion-label>
+        <ion-input formControlName="time" required placeholder="00:00 AM/PM"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Select Type of Service</ion-label>
+          <ion-input type="text" formControlName="serve" required placeholder="Type Name of Preferred Service"></ion-input>
+          <ion-text id="ion-text-stl1"> Services Offered</ion-text>
+          <ion-text id="ion-text-stl2">🔘 Haricut - Her/They</ion-text>
+          <ion-text id="ion-text-stl2">🔘 Haircut - Him/They</ion-text>
+          <ion-text id="ion-text-stl2">🔘 Gel Polish</ion-text>
+          <ion-text id="ion-text-stl2">🔘 Foot Spa</ion-text>
+          <ion-text id="ion-text-stl2">🔘 Manicure</ion-text>
+          <ion-text id="ion-text-stl2">🔘 Pedicure</ion-text>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Select Beautician</ion-label>
+          <ion-input type="text" formControlName="beaut" required placeholder="Type Name of Preferred Beautician"></ion-input>
+          <ion-text id="ion-text-stl1">Available Beauticians</ion-text>
+          <ion-text id="ion-text-stl2">🔘 Darla</ion-text>
+          <ion-text id="ion-text-stl2">🔘 Maya</ion-text>
+          <ion-text id="ion-text-stl2">🔘 Kharla</ion-text>
+        </ion-item>
+        
+        <div class="button">
+          <ion-button type="submit" color="medium">Book</ion-button>
+        </div>    
+        
+      </form>
+    </ion-list>
+  </ion-card>
+</ion-content>
